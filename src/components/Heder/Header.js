@@ -3,7 +3,7 @@ import styles from './Header.module.css'
 
 const Header=()=>(
     <div className={styles.header}>
-        Square Game
+        library
     </div>
 )
 

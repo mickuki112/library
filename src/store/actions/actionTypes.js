@@ -1,2 +1,3 @@
-export const SET_POINTS_OBJECT = 'SET_POINTS_OBJECT';
-export const REMOVE_POINTS_OBJECT = 'REMOVE_POINTS_OBJECT';
+export const ADD_BOOK = 'ADD_BOOK';
+export const EDIT_BOOK = 'EDIT_BOOK';
+export const REMOVE_BOOK = 'REMOVE_BOOK';

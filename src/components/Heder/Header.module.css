@@ -8,6 +8,7 @@
     z-index: 500;
     text-align:center ;
     color: #fff;
-    background-color: #1d1d1d;
+    background: rgb(85,156,189);
+    background: linear-gradient(87deg, rgba(85,156,189,1) 0%, rgba(147,201,214,1) 100%);
     box-shadow: 0 1px 10px 1px rgba(0, 0, 0, 1);
 }

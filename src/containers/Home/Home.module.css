@@ -5,9 +5,18 @@
     margin-top: 50px;
     display: flex;
     flex-direction: column;
+    margin-bottom: 120px;
 }
-.points{
-    font-size: 72px;
-    color: #fff;
+.ocean {
+    width:100%;
+    position:absolute;
+    bottom:0;
+    left:0;
+    background: #015871;
+}
 
+@media only screen and (max-width: 900px) {
+    .wave {
+        margin-bottom: 0;
+    }
 }

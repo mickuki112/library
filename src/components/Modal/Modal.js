@@ -1,10 +1,17 @@
 import React from "react";
-import styles from './Header.module.css'
+import styles from './Modal.module.css'
 
-const Header=()=>(
-    <div className={styles.header}>
-        library
-    </div>
+const Modal = ({hidden, close, children}) => (
+    <>
+        <div className={hidden ? styles.backgroundHidden : styles.background} onClick={close}/>
+        <div className={styles.modal}
+             style={{
+                 transform: !hidden ? 'translateY(0vh)' : 'translateY(-100vh)',
+                 opacity: !hidden ? '1' : '0'
+             }}>
+            {children}
+        </div>
+    </>
 )
 
-export default Header;
+export default Modal;

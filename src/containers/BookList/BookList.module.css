@@ -2,7 +2,59 @@
     align-items: center;
     justify-content: center;
     width: 100%;
-    margin-top: 50px;
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.input {
+    margin: 0 0 20px 0;
+    height: 30px;
+    background-color: #f6f6f6;
+    color: #000;
+    border: none;
+    font-size: 22px;
+    border-bottom: #349dba 2px solid;
+    width: 350px;
+}
+.containerInput{
+    align-items: center;
     display: flex;
     flex-direction: column;
+}
+.buttonSave {
+    background-color: #28a745;
+}
+
+.buttonSave:hover {
+    background-color: #189735;
+}
+.buttonClose {
+    background-color: #981b1e;
+}
+
+.buttonClose:hover {
+    background-color: #880b0e;
+}
+.buttonAdd {
+    background-color: #4BC1D2;
+}
+
+.buttonAdd:hover {
+    background-color: #3BB1C2;
+}
+button{
+    color: #fff;
+    margin-bottom: 10px;
+    width: 100px;
+    height: 30px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+}
+@media only screen and (max-width: 767px) {
+    .input {
+        width: auto;
+    }
 }

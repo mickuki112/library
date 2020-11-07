@@ -1,28 +1,22 @@
 import React, {Component} from 'react'
-import EngineGame from '../EngineGame/EngineGame'
 import styles from './Home.module.css'
 import Header from "../../components/Heder/Header";
-import {connect} from "react-redux";
+import Wave from "../../components/Wave/Wave";
+import BookList from "../BookList/BookList";
 
 class Home extends Component {
 
     render() {
         return (
-            <>
+            <div style={{minHeight: '100vh'}}>
                 <Header/>
                 <div className={styles.container}>
-                    <EngineGame/>
-                    <div className={styles.points}>
-                        {this.props.points}
-                    </div>
+                    <BookList/>
                 </div>
-            </>
+                <Wave/>
+            </div>
         )
     }
 }
 
-const mapStateToProps = state => {
-    return {points: state.gameMechanics.points}
-};
-
-export default connect(mapStateToProps, null)(Home);
+export default Home;
