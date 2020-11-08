@@ -26,6 +26,7 @@ class BookList extends Component {
 			index: null,
 			title: '',
 			author: '',
+			error: '',
 			yearPublication: new Date(Date.now()),
 			img: '',
 		})
@@ -101,7 +102,7 @@ class BookList extends Component {
 				/>
 				<button
 					type="button"
-					onClick={() => this.setState({ hidden: false })}
+					onClick={() => this.setState({ hidden: false,error: true, })}
 					className={styles.buttonAdd}
 				>
 					Add Book
@@ -151,6 +152,7 @@ class BookList extends Component {
 							</button>
 							<button
 								disabled={error}
+								style={{backgroundColor:error && '#aaa'}}
 								onClick={this.saveBook}
 								type="button"
 								className={styles.buttonSave}
