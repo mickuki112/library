@@ -7,37 +7,44 @@ const initState = {
             title: 'Elon Musk. Biografia twórcy PayPala, Tesli, SpaceX',
             author: 'Vance Ashlee',
             img: 'https://ecsmedia.pl/c/elon-musk-biografia-tworcy-paypala-tesli-spacex-w-iext51085456.jpg',
-            // yearPublishment:
+            yearPublication:new Date('2020-12-20')
         },
         {
             title: 'Jak działa Google',
             author: 'Schmidt Eric , Rosenberg Jonathan',
-            img: 'https://cdn-lubimyczytac.pl/upload/books/3699000/3699958/554728-352x500.jpg'
+            img: 'https://cdn-lubimyczytac.pl/upload/books/3699000/3699958/554728-352x500.jpg',
+            yearPublication:new Date('2020-12-20')
+
         },
         {
             title: 'Uczenie maszynowe z użyciem Scikit-Learn i TensorFlow. Wydanie II',
             author: 'Aurélien Géron',
-            img: 'https://static01.helion.com.pl/global/okladki/326x466/uczem2.png'
+            img: 'https://static01.helion.com.pl/global/okladki/326x466/uczem2.png',
+            yearPublication:new Date('2020-12-20')
         },
         {
             title: 'Python. Wprowadzenie. Wydanie V',
             author: 'Mark Lutz',
-            img: 'https://static01.helion.com.pl/global/okladki/326x466/pytho5.png'
+            img: 'https://static01.helion.com.pl/global/okladki/326x466/pytho5.png',
+            yearPublication:new Date('2020-12-20')
         },
         {
             title: 'C# od podszewki. Wydanie IV',
             author: 'Jon Skeet',
-            img: 'https://static01.helion.com.pl/global/okladki/326x466/cshop4.png'
+            img: 'https://static01.helion.com.pl/global/okladki/326x466/cshop4.png',
+            yearPublication:new Date('2020-12-20')
         },
         {
             title: 'Docker. Projektowanie i wdrażanie aplikacji',
             author: 'Jaroslaw Krochmalski',
-            img: 'https://static01.helion.com.pl/global/okladki/145x218/docpro.png'
+            img: 'https://static01.helion.com.pl/global/okladki/145x218/docpro.png',
+            yearPublication:new Date('2020-12-20')
         },
         {
             title: 'Vue.js 2. Wprowadzenie dla profesjonalistów',
             author: 'Adam Freeman',
-            img: 'https://static01.helion.com.pl/global/okladki/326x466/vue2wp.png'
+            img: 'https://static01.helion.com.pl/global/okladki/326x466/vue2wp.png',
+            yearPublication:new Date('2020-12-20')
         }
     ],
 };

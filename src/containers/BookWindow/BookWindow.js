@@ -25,6 +25,7 @@ class BookWindow extends Component {
                 />
                 <p className={styles.title}>{book.title}</p>
                 <p className={styles.author}>{book.author}</p>
+                <p className={styles.author}>{`${book.yearPublication.getDate()}-${book.yearPublication.getMonth()+1}-${book.yearPublication.getFullYear()}`}</p>
             </div>
         )
     }

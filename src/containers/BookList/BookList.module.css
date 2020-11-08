@@ -2,7 +2,6 @@
     align-items: center;
     justify-content: center;
     width: 100%;
-    margin-top: 20px;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -22,6 +21,10 @@
     align-items: center;
     display: flex;
     flex-direction: column;
+}
+.error{
+    color: #981b1e;
+    font-weight: 300;
 }
 .buttonSave {
     background-color: #28a745;
@@ -43,6 +46,12 @@
 
 .buttonAdd:hover {
     background-color: #3BB1C2;
+}
+.buttonContainer{
+    margin-top: -5px;
+    justify-content:space-around;
+    display: flex;
+    flex-direction: row;
 }
 button{
     color: #fff;

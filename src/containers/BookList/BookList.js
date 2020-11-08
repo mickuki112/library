@@ -4,6 +4,9 @@ import {connect} from "react-redux";
 import BookWindow from "../BookWindow/BookWindow";
 import Modal from "../../components/Modal/Modal";
 import {addBook, removeBook, editBook} from "../../store/actions/library";
+import DatePicker from "react-datepicker";
+
+import "react-datepicker/dist/react-datepicker.css";
 
 class BookList extends Component {
 
@@ -13,6 +16,8 @@ class BookList extends Component {
         title: '',
         author: '',
         img: '',
+        error: '',
+        yearPublication: new Date(Date.now()),
         filter: '',
     }
 
@@ -22,6 +27,7 @@ class BookList extends Component {
             index: null,
             title: '',
             author: '',
+            yearPublication: new Date(Date.now()),
             img: '',
         })
     }
@@ -37,19 +43,21 @@ class BookList extends Component {
     }
 
     saveBook = () => {
-        const {title, author, img, index} = this.state
+        const {title, author, img, index, yearPublication} = this.state
         if (index) {
             this.props.editBook(
                 {
                     title,
                     author,
+                    yearPublication,
                     img
                 }, index)
-        }else{
+        } else {
             this.props.addBook(
                 {
                     title,
                     author,
+                    yearPublication,
                     img
                 })
         }
@@ -66,8 +74,25 @@ class BookList extends Component {
         return newBook
     }
 
+    validationEmail = (e) => {
+        if (e.target.value.length > 0) {
+            if (e.target.value.length < 30)
+                this.setState({title: e.target.value, error: ''})
+            else
+                this.setState({error: 'Title is too long'})
+        }else
+            this.setState({title: e.target.value,error: 'Title is too short'})
+    }
+
+    validationAuthor = (e) => {
+        if (e.target.value.length < 20)
+            this.setState({author: e.target.value,error:''})
+        else
+            this.setState({error: 'Title is too author'})
+    }
+
     render() {
-        const {title, author, img, filter} = this.state
+        const {title, author, img, filter, yearPublication,error} = this.state
         return (
             <>
                 <input
@@ -89,7 +114,7 @@ class BookList extends Component {
                                 className={styles.input}
                                 placeholder='title'
                                 value={title}
-                                onChange={(e => this.setState({title: e.target.value}))}
+                                onChange={(e => this.validationEmail(e))}
                             />
                             <input
                                 type='author'
@@ -97,7 +122,7 @@ class BookList extends Component {
                                 className={styles.input}
                                 placeholder='author'
                                 value={author}
-                                onChange={(e => this.setState({author: e.target.value}))}
+                                onChange={(e => this.validationAuthor(e))}
                             />
                             <input
                                 type='img'
@@ -107,10 +132,16 @@ class BookList extends Component {
                                 value={img}
                                 onChange={(e => this.setState({img: e.target.value}))}
                             />
+                            <DatePicker
+                                className={styles.input}
+                                selected={yearPublication}
+                                dateFormat="dd/MM/yyyy"
+                                onChange={date => this.setState({yearPublication: date})}/>
+                                <p className={styles.error}>{error}</p>
                         </div>
-                        <div>
+                        <div className={styles.buttonContainer}>
                             <button onClick={this.modalClose} className={styles.buttonClose}>Close</button>
-                            <button onClick={this.saveBook} className={styles.buttonSave}>Save</button>
+                            <button disabled={error} onClick={this.saveBook} className={styles.buttonSave}>Save</button>
                         </div>
                     </Modal>
                     {this.filter().map((book, i) => (

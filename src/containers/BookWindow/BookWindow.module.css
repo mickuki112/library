@@ -8,9 +8,13 @@
 }
 .title{
     font-weight: bold;
+    margin-bottom:2px;
+    overflow-wrap: break-word;
 }
 .author {
     font-weight: 300;
+    margin:2px;
+    overflow-wrap: break-word;
 }
 .bookItem{
     width: 240px;
@@ -19,7 +23,7 @@
     background-color: #f6f6f6;
     color: #000;
     font-size: 14px;
-    box-shadow: 0 0 47px -13px rgba(0, 0, 0, 1);
+    box-shadow: 0 0 37px -13px rgba(0, 0, 0, 1);
 }
 .edit{
     cursor: pointer;
