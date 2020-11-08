@@ -1,22 +1,22 @@
-.container{
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    margin-top: 50px;
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 120px;
+.container {
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	margin-top: 50px;
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 120px;
 }
 .ocean {
-    width:100%;
-    position:absolute;
-    bottom:0;
-    left:0;
-    background: #015871;
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	background: #015871;
 }
 
 @media only screen and (max-width: 900px) {
-    .wave {
-        margin-bottom: 0;
-    }
+	.wave {
+		margin-bottom: 0;
+	}
 }

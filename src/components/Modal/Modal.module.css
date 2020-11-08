@@ -1,39 +1,39 @@
 .backgroundHidden {
-    visibility: hidden;
+	visibility: hidden;
 
-    background-color: rgb(80,80,80,0);
-    transition: 0.5s;
-    z-index: 500;
-    top:0;
-    left:0;
-    position: fixed;
-    width: 100vw;
-    height: 100vh;
+	background-color: rgb(80, 80, 80, 0);
+	transition: 0.5s;
+	z-index: 500;
+	top: 0;
+	left: 0;
+	position: fixed;
+	width: 100vw;
+	height: 100vh;
 }
 .background {
-    background-color: rgb(0,0,0,0.5);
-    transition: 0.5s;
-    z-index: 500;
-    top:0;
-    left:0;
-    position: fixed;
-    width: 100vw;
-    height: 100vh;
+	background-color: rgb(0, 0, 0, 0.5);
+	transition: 0.5s;
+	z-index: 500;
+	top: 0;
+	left: 0;
+	position: fixed;
+	width: 100vw;
+	height: 100vh;
 }
-.modal{
-    position: fixed;
-    padding: 50px;
-    z-index: 1000;
-    background-color: #f6f6f6;
-    border-radius: 20px;
-    box-shadow: 0 5px 8px 0 rgba(0,0,0,0.2), 0 7px 20px 0 rgba(0,0,0,0.17);
-    margin: 100px auto 0;
-    transition: all .8s;
-    top:100px;
-    width: 500px;
+.modal {
+	position: fixed;
+	padding: 50px;
+	z-index: 1000;
+	background-color: #f6f6f6;
+	border-radius: 20px;
+	box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.17);
+	margin: 100px auto 0;
+	transition: all 0.8s;
+	top: 100px;
+	width: 500px;
 }
 @media only screen and (max-width: 767px) {
-    .modal {
-        width: 80%;
-    }
+	.modal {
+		width: 80%;
+	}
 }

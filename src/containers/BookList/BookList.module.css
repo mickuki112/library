@@ -1,69 +1,69 @@
-.container{
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
+.container {
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
 }
 
 .input {
-    margin: 0 0 20px 0;
-    height: 30px;
-    background-color: #f6f6f6;
-    color: #000;
-    border: none;
-    font-size: 22px;
-    border-bottom: #349dba 2px solid;
-    width: 350px;
+	margin: 0 0 20px 0;
+	height: 30px;
+	background-color: #f6f6f6;
+	color: #000;
+	border: none;
+	font-size: 22px;
+	border-bottom: #349dba 2px solid;
+	width: 350px;
 }
-.containerInput{
-    align-items: center;
-    display: flex;
-    flex-direction: column;
+.containerInput {
+	align-items: center;
+	display: flex;
+	flex-direction: column;
 }
-.error{
-    color: #981b1e;
-    font-weight: 300;
+.error {
+	color: #981b1e;
+	font-weight: 300;
 }
 .buttonSave {
-    background-color: #28a745;
+	background-color: #28a745;
 }
 
 .buttonSave:hover {
-    background-color: #189735;
+	background-color: #189735;
 }
 .buttonClose {
-    background-color: #981b1e;
+	background-color: #981b1e;
 }
 
 .buttonClose:hover {
-    background-color: #880b0e;
+	background-color: #880b0e;
 }
 .buttonAdd {
-    background-color: #4BC1D2;
+	background-color: #4bc1d2;
 }
 
 .buttonAdd:hover {
-    background-color: #3BB1C2;
+	background-color: #3bb1c2;
 }
-.buttonContainer{
-    margin-top: -5px;
-    justify-content:space-around;
-    display: flex;
-    flex-direction: row;
+.buttonContainer {
+	margin-top: -5px;
+	justify-content: space-around;
+	display: flex;
+	flex-direction: row;
 }
-button{
-    color: #fff;
-    margin-bottom: 10px;
-    width: 100px;
-    height: 30px;
-    cursor: pointer;
-    border: none;
-    border-radius: 5px;
+button {
+	color: #fff;
+	margin-bottom: 10px;
+	width: 100px;
+	height: 30px;
+	cursor: pointer;
+	border: none;
+	border-radius: 5px;
 }
 @media only screen and (max-width: 767px) {
-    .input {
-        width: auto;
-    }
+	.input {
+		width: auto;
+	}
 }
